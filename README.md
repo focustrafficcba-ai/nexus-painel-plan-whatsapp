@@ -1,29 +1,25 @@
-# Nexus — Painéis de Planejamento de Campanhas
+# Nexus — Painel de Planejamento WhatsApp
 
-Painéis estáticos (HTML/CSS/JS, sem build, sem dependências de servidor) para planejamento e projeção de resultados de campanhas de tráfego pago, desenvolvidos para a **Nexus Marketing Advisory**.
+Painel estático (HTML/CSS/JS, sem build, sem dependências de servidor) para planejamento e projeção de resultados de campanhas de tráfego pago com foco em **geração de conversas via WhatsApp** (Click to WhatsApp, QR Code, Bio Link, Orgânico etc.), desenvolvido para a **Nexus Marketing Advisory**.
 
-## 📊 Painéis disponíveis
+> Este painel faz parte de um conjunto junto com o [Painel de Planejamento Landing Page](https://github.com/focustrafficcba-ai/nexus-painel-plan-landing-page), mantido em repositório separado.
 
-### 1. `nexus-whatsapp.html` — Planejamento WhatsApp
-Projeta resultados de campanhas com foco em geração de conversas via WhatsApp (Click to WhatsApp, QR Code, Bio Link, Orgânico etc.).
+## 📊 O que o painel faz
 
-**Funil calculado:** Alcance → Conversas Iniciadas → Responderam → Qualificados → Vendas → Receita
+Projeta o funil completo de uma campanha voltada à geração de conversas no WhatsApp:
 
-### 2. `nexus-landing-page.html` — Planejamento Landing Page
-Projeta resultados de campanhas com foco em geração de leads via landing page / formulário.
-
-**Funil calculado:** Investimento → Impressões → Cliques → Leads → Qualificados → Vendas → Receita
+**Alcance → Conversas Iniciadas → Responderam → Qualificados → Vendas → Receita**
 
 ## ⚙️ Como usar
 
 1. Abra o arquivo `.html` direto no navegador (ou acesse pelo link publicado).
-2. Preencha os **Parâmetros Globais** (orçamento total, metas do mês, ticket médio).
-3. Clique em **"Nova Ação"** para cadastrar cada campanha/canal com suas taxas estimadas (CTR, taxa de resposta, taxa de qualificação, taxa de fechamento).
+2. Preencha os **Parâmetros Globais** (orçamento total, meta de conversas, meta de vendas, ticket médio).
+3. Clique em **"Nova Ação"** para cadastrar cada campanha/canal com suas taxas estimadas (CTR → WhatsApp, taxa de resposta, taxa de qualificação, taxa de fechamento).
 4. O painel calcula automaticamente:
    - Projeção por ação (tabela principal)
-   - Projeção consolidada por canal/origem (Meta, Google, Orgânico, LinkedIn, TikTok etc.)
+   - Projeção consolidada por origem/canal (Meta, Google, Orgânico, LinkedIn, TikTok etc.)
    - Projeção total do mês + ROI estimado
-   - Progresso das metas (verde = atingida, vermelho = abaixo do esperado)
+   - Progresso das metas de Conversas e Vendas (verde = atingida, vermelho = abaixo do esperado)
 5. Exporte o painel preenchido em **PNG** ou **PDF** pelos botões no topo, para enviar a clientes ou arquivar.
 
 ## ⚠️ Importante sobre as projeções
@@ -45,7 +41,7 @@ Os dados preenchidos ficam salvos via `localStorage`, **no navegador de cada dis
 
 - HTML + CSS puro (sem framework)
 - JavaScript vanilla
-- [Chart.js](https://www.chartjs.org/) — gráfico de distribuição por canal
+- [Chart.js](https://www.chartjs.org/) — gráfico de distribuição por origem
 - [html2canvas](https://html2canvas.hertzen.com/) + [jsPDF](https://github.com/parallax/jsPDF) — exportação em PNG/PDF
 
 ## 🚀 Deploy
